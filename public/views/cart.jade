@@ -1,0 +1,5 @@
+div
+  h1 Корзина
+
+  div(ng-repeat="item in cart.getItems()")
+    dc-item(item="item", show-count-in-cart)

@@ -1,0 +1,7 @@
+li.span4
+  .thumbnail
+    h3 {{ item.title }}
+      span(ng-show="showCart") {{ item.countInCart }}
+    p {{ item.description }}
+    p {{ item.price }} {{ item.price | rub }}
+    button(ng-click="addToCart()") Добавить в корзину

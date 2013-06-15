@@ -1,0 +1,34 @@
+doctype 5
+html(lang="ru", ng-app="dcShop")
+  head
+    meta(charset="utf8")
+
+    title Магазин
+
+    link(rel="stylesheet", href="/components/bootstrap/css/bootstrap.css")
+    link(rel="stylesheet", href="/styles/index.css")
+
+  body
+    .container
+      .navbar.navbar-inverse
+        .navbar-inner
+          a.brand(dc-cart)
+            | {{ cart.getLength() }} {{ cart.getLength() | plural:["товар", "товара", "товаров"] }}&nbsp;
+            span(ng-show="cart.getLength() > 0") на {{ cart.getTotalPrice() }} {{ cart.getTotalPrice() | rub }}
+            span(ng-show="cart.getLength() == 0") в корзине
+
+          ul.nav
+            li
+              a(href="#!/") Главная
+              a(href="#!/cart") Корзина
+
+      h1 Магазин "Ромашка"
+
+      div(ng-view)
+
+    script(src="/components/jquery/jquery.js")
+    script(src="/components/angular/angular.js")
+    script(src="/components/angular-resource/angular-resource.js")
+    script(src="/scripts/dcItems/index.js")
+    script(src="/scripts/dcCart/index.js")
+    script(src="/scripts/index.js")

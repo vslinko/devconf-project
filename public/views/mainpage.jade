@@ -1,0 +1,20 @@
+.row
+  .span4
+    div
+      h3 Поиск
+      label по заголовку
+        input(ng-model="query.title")
+      label по описанию
+        input(ng-model="query.description")
+
+    div
+      h3 Фильтр по стоимости
+      label min
+        input(ng-model="min")
+      label max
+        input(ng-model="max")
+
+  .span8
+    ul.thumbnails
+      div(ng-repeat="item in items | filter:query | range:['price',min,max] | orderBy:sortAlgo")
+        dc-item(item="item")

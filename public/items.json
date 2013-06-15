@@ -1,0 +1,44 @@
+[
+  {
+    "title": "iPhone",
+    "price": 29999.99,
+    "description": "iPhone 5",
+    "count": 5
+  },
+  {
+    "title": "iPad",
+    "price": 19999.99,
+    "description": "Барлам-барлам",
+    "count": 5
+  },
+  {
+    "title": "Nokia",
+    "price": 9999.99,
+    "description": "iPhone 5",
+    "count": 5
+  },
+  {
+    "title": "HTC",
+    "price": 39999.99,
+    "description": "iPhone 5",
+    "count": 5
+  },
+  {
+    "title": "Samsung",
+    "price": 49999.99,
+    "description": "iPhone 5",
+    "count": 5
+  },
+  {
+    "title": "Sony",
+    "price": 59999.99,
+    "description": "iPhone 5",
+    "count": 5
+  },
+  {
+    "title": "Nexus",
+    "price": 999.99,
+    "description": "iPhone 5",
+    "count": 5
+  }
+]
